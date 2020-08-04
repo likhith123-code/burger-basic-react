@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import './App.css';
+import classes from './App.css';
 import Data from './person/people';
 import styled from 'styled-components';
 
@@ -10,9 +10,6 @@ const StyledButton=styled.button`
   &:hover{
     width:100px;
   }
-`;
-const DivNew=styled.div`
-text-align:center;
 `;
 class App extends Component{
   state={
@@ -42,10 +39,10 @@ class App extends Component{
       )
     }
     return( 
-      <DivNew>
+      <div className={classes.Maindiv}>
         <StyledButton alt={this.state.visible} onClick={this.toggleHandler} >View/Hide Names</StyledButton>
         {lists}
-      </DivNew>
+      </div>
      
     )
   }

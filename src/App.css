@@ -13,6 +13,14 @@
   }
 }
 
+.Maindiv{
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border:2px solid red;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
