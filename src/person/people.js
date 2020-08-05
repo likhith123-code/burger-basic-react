@@ -1,18 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import classes from './styles.css';
 
-const StyledDiv=styled.div`
-  text-align:center;
-  margin:10px auto;
-  width:60%;
-  border:2px solid black;
-`;
+//using css modules
 const p=(props)=>{
     return(
-       <StyledDiv>
+       <div className={classes.person}>
            <h2>Name : {props.name}</h2>
            <p>I am {props.age} years old.</p>
-       </StyledDiv>
+       </div>
     )
 }
 

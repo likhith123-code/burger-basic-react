@@ -39,6 +39,7 @@ class App extends Component{
       )
     }
     return( 
+      //using css modules
       <div className={classes.Maindiv}>
         <StyledButton alt={this.state.visible} onClick={this.toggleHandler} >View/Hide Names</StyledButton>
         {lists}
