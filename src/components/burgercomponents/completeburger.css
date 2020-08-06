@@ -1,0 +1,22 @@
+.content{
+    width: 100%;
+    height: 250px;
+    margin:auto;
+    overflow:scroll;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media(min-width:500px) and (min-height:401px){
+    .content{
+        width:450px;
+        height:400px;
+    }
+}
+
+@media(min-width:1000px) and (min-height:700px){
+    .content{
+        width:700px;
+        height:600px;
+    }
+}
